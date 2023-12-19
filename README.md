@@ -8,10 +8,40 @@
 </p>
 
 ## Installazione laravel 
-
-## configurazione laravel 
-```bash 
+## Configurazione Laravel
+```bash
 composer require pacificdev/laravel_9_preset
 
 php artisan preset:ui bootstrap
+
+npm install
+
+npm install --save @fortawesome/fontawesome-free
+
+#in vite config aggiungo agli alias
+'~@fortawesome': path.resolve(__dirname, 'node_modules/@fortawesome'),
+
+#copio la cartella dei webfont e se voglio la rinomino
+
+#comandi git
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin your_git_url 
+git push -u origin main
+
+#creo nuova repo su github da template
+
+#clono la repo da vscode
+
+composer install
+
+#copia e rinomina file .env.example in .env
+
+php artisan key:generate
+
+npm install
 ```
+
