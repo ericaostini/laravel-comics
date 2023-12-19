@@ -21,6 +21,9 @@
                         </div>
                     @endforeach
                 </div>
+                <div class="text-center">
+                    <button class="btn text-light fw-bolder mb-5">LOAD MORE</button>
+                </div>
             </div>
         </section>
     </main>

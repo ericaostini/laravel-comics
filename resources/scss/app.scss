@@ -31,12 +31,18 @@ header {
 
 .section-two {
     background-color: $color-footer;
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 30px 20px;
 
     img {
         height: 150px;
         width: 100%;
         object-fit: cover;
         object-position: top;
+    }
+
+    button {
+        background-color: $color-theme;
+        padding: 5px 40px;
+        margin: 0 auto;
     }
 }
