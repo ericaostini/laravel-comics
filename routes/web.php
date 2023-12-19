@@ -16,7 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comics = config('db.comics');
     $navbar = config('db.navbar');
-    $footer = config('db.footer');
-    $icons = config('db.icons');
+    // $footer = config('db.footer');
+    // $icons = config('db.icons');
     return view('home', compact('comics'));
-});
+})->name('home');
+
+
+Route::get('/comics', function () {
+    $comics = config('db.comics');
+    $navbar = config('db.navbar');
+    return view('comics.index', compact('comics'));
+})->name('comics.index');
