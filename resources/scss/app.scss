@@ -13,6 +13,30 @@ h1 {
     color: $text-color;
 }
 
-main {
+.section-one {
     background-image: url(../img/jumbotron.jpg);
+    height: 400px;
+    background-position: top;
+    background-size: cover;
+
+    .title-relative {
+        background-color: $color-theme;
+        width: fit-content;
+        padding: 10px 20px;
+        position: absolute;
+        top: -70px;
+        left: -10px;
+    }
+}
+
+.section-two {
+    background-color: $color-footer;
+    padding: 50px 20px 50px 20px;
+
+    img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
 }
