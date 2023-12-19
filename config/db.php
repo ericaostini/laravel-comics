@@ -109,5 +109,32 @@ return ['comics' => [
         "sale_date" => "2019-04-10",
         "type" => "graphic novel",
     ]
-]
+],
+    'navbar' => [
+        [
+            'text' => 'CHARACTERS',
+            'active' => false,
+        ],
+        [
+            'text' => 'COMICS',
+            'active' => true,
+        ],
+        [
+            'text' => 'COMICS',
+            'active' => false,
+        ],
+        [
+            'text' => 'COMICS',
+            'active' => false,
+        ],
+        [
+            'text' => 'COMICS',
+            'active' => false,
+        ],
+        [
+            'text' => 'COMICS',
+            'active' => false,
+        ],
+
+    ],
 ];
