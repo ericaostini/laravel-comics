@@ -12,12 +12,13 @@
         <section class="section-two">
             <div class="container">
                 <div class="row">
-                    @foreach ($comics as $comic)
+                    @foreach ($comics as $key => $comic)
                         <div class="col-12 col-md-3 col-lg-2">
                             <div>
                                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                             </div>
-                            <h6 class="text-light p-3 text-center">{{ $comic['title'] }}</h6>
+                            <a href = "{{ route('comics.show', $key) }}"
+                                class="text-light p-3 text-center">{{ $comic['title'] }}</a>
                         </div>
                     @endforeach
                 </div>

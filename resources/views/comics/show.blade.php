@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', $comic['title'])
 
 @section('content')
     <main>
@@ -12,14 +12,12 @@
         <section class="section-two">
             <div class="container">
                 <div class="row">
-                    @foreach ($comics as $comic)
-                        <div class="col-12 col-md-3 col-lg-2">
-                            <div>
-                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                            </div>
-                            <h6 class="text-light p-3 text-center">{{ $comic['title'] }}</h6>
+                    <div class="col-12">
+                        <div>
+                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                            <h6>{{ $comic['title'] }}</h6>
                         </div>
-                    @endforeach
+                    </div>
                 </div>
                 <div class="text-center">
                     <button class="btn text-light fw-bolder mb-5">LOAD MORE</button>
@@ -27,5 +25,4 @@
             </div>
         </section>
     </main>
-
 @endsection
