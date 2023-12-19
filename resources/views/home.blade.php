@@ -5,9 +5,9 @@
 @section('content')
     <main>
         <section class="section-one">
-            {{-- <div class="container mt-5 position-relative">
+            <div class="container mt-5">
                 <div class="title-relative text-light fw-bolder">CURRENT SERIES</div>
-            </div> --}}
+            </div>
         </section>
         <section class="section-two">
             <div class="container">

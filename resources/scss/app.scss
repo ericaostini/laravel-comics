@@ -9,8 +9,8 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1 {
-    color: $text-color;
+header {
+    height: 100%;
 }
 
 .section-one {
@@ -18,14 +18,14 @@ h1 {
     height: 400px;
     background-position: top;
     background-size: cover;
+    position: relative;
 
     .title-relative {
         background-color: $color-theme;
         width: fit-content;
         padding: 10px 20px;
         position: absolute;
-        top: -70px;
-        left: -10px;
+        bottom: -25px;
     }
 }
 
