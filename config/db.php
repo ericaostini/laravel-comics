@@ -111,47 +111,4 @@ return [
             "type" => "graphic novel",
         ]
     ],
-    'navbar' => [
-        [
-            'text' => 'CHARACTERS',
-            'active' => false,
-        ],
-        [
-            'text' => 'COMICS',
-            'active' => true,
-        ],
-        [
-            'text' => 'COMICS',
-            'active' => false,
-        ],
-        [
-            'text' => 'COMICS',
-            'active' => false,
-        ],
-        [
-            'text' => 'COMICS',
-            'active' => false,
-        ],
-        [
-            'text' => 'COMICS',
-            'active' => false,
-        ],
-
-    ],
-    'footer' => [
-        [
-            'title' => 'DC COMICS',
-            'inform' => ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
-        ],
-        [
-            'title' => 'DC',
-            'inform' => ['Terms Of Use', 'Privacy policy', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
-        ],
-        [
-            'title' => 'SITES',
-            'inform' => ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
-        ]
-
-    ],
-    'icons' => ['/images/footer-facebook.png', '/images/footer-periscope.png', '/images/footer-pinterest.png', '/images/footer-twitter.png', '/images/footer-youtube.png']
 ];

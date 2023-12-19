@@ -27,6 +27,11 @@ header {
         position: absolute;
         bottom: -25px;
     }
+
+    h1 {
+        background-color: $color-theme;
+        color: $color-smalltext;
+    }
 }
 
 .section-two {

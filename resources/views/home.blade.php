@@ -4,7 +4,11 @@
 
 @section('content')
     <main>
-        <h1>Prodotti disponibili</h1>
+        <section class="section-one">
+            <div class="container mt-5">
+                <div class="title-relative text-light fw-bolder">Comics available</div>
+            </div>
+        </section>
     </main>
 
 @endsection

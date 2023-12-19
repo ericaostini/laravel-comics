@@ -12,16 +12,19 @@
         <section class="section-two">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div>
-                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                            <h6>{{ $comic['title'] }}</h6>
-                        </div>
+                    <div class="col-4">
+                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                    </div>
+                    <div class="col-8 text-light">
+                        <h6>{{ $comic['title'] }}</h6>
+                        <p>{{ $comic['description'] }}</p>
+                        <p>Price: {{ $comic['price'] }}</p>
                     </div>
                 </div>
-                <div class="text-center">
-                    <button class="btn text-light fw-bolder mb-5">LOAD MORE</button>
-                </div>
+            </div>
+            <div class="text-center">
+                <a href="{{ route('comics.index') }}" class="btn btn-light fw-bolder mb-5">BACK</a>
+            </div>
             </div>
         </section>
     </main>
