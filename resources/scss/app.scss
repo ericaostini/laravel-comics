@@ -1,0 +1,117 @@
+@use './partials/variables' as *;
+
+$fa-font-path: "../webfonts" !default;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import '~bootstrap/scss/bootstrap';
+
+header {
+    height: 100%;
+}
+
+.section-one {
+    background-image: url(../img/jumbotron.jpg);
+    height: 400px;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+
+    .title-relative {
+        background-color: $color-theme;
+        width: fit-content;
+        padding: 10px 20px;
+        position: absolute;
+        bottom: -25px;
+    }
+
+    h1 {
+        background-color: $color-theme;
+        color: $color-smalltext;
+    }
+}
+
+.section-two {
+    background-color: $color-footer;
+    padding: 50px 20px 30px 20px;
+
+    img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    button {
+        background-color: $color-theme;
+        padding: 5px 40px;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    font-family: $main-font;
+
+    .footer-top {
+        background-image: url("../images/footer-bg.jpg");
+        overflow: hidden;
+        height: 450px;
+
+        .info-relative {
+            position: relative;
+            bottom: 126px;
+
+            small {
+                color: $color-smalltext;
+            }
+        }
+
+        ul {
+            padding-top: 40px;
+            padding-right: 40px;
+
+            li {
+                color: white;
+                list-style: none;
+            }
+
+            .small-title {
+                color: $color-smalltext;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+
+        img {
+            position: relative;
+            top: -50px;
+        }
+    }
+
+    .footer-bottom {
+        background-color: $color-footer;
+        height: calc(100% - 670px);
+        padding: 30px;
+
+        button {
+            border: 1px solid $color-theme;
+            padding: 10px;
+
+            &:hover {
+                background-color: $color-theme;
+            }
+
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    }
+}
