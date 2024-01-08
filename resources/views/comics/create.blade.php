@@ -10,7 +10,8 @@
             </div>
         </section>
         <section class="section-two">
-            <form action="{{ route('comics.store') }}" method="POST" @csrf>
+            <form action="{{ route('comics.store') }}" method="POST">
+                @csrf
                 <input type="text" name="title" placeholder="Inserire titolo" class="form-control">
                 <input type="text" name="description" placeholder="Inserire descrizione" class="form-control">
                 <input type="text" name="price" placeholder="Inserire prezzo" class="form-control">
