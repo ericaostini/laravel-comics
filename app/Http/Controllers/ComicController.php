@@ -10,11 +10,13 @@ class ComicController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View;
      */
     public function index()
     {
         //
+        $comics = Comic::all();
+        return view('comics.index', compact('comics'));
     }
 
     /**
@@ -47,6 +49,7 @@ class ComicController extends Controller
     public function show(Comic $comic)
     {
         //
+        return view('comics.show', compact('comic'));
     }
 
     /**

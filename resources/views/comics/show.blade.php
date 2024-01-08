@@ -13,12 +13,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                        <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
                     </div>
                     <div class="col-8 text-light">
-                        <h6>{{ $comic['title'] }}</h6>
-                        <p>{{ $comic['description'] }}</p>
-                        <p>Price: {{ $comic['price'] }}</p>
+                        <h6>{{ $comic->title }}</h6>
+                        <p>{{ $comic->description }}</p>
+                        <p>Price: {{ $comic->price }}</p>
                     </div>
                 </div>
             </div>
